@@ -1,0 +1,9 @@
+fn main(){
+    hello();
+    hello();
+}
+ 
+fn hello()
+{
+    println!("Hello Rust");
+}
