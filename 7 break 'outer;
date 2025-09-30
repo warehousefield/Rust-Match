@@ -1,0 +1,15 @@
+fn main() {
+    let mut count = 0;
+    'outer: loop {
+        println!("count = {count}");
+        let mut remaining = 10;
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 { break;}
+            if count == 2 { break 'outer; }
+            remaining -= 1;
+        }
+        count += 1;
+    }
+    println!("Final count = {count}");
+}
