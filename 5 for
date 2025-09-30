@@ -1,0 +1,7 @@
+fn main(){
+    for num in 1..6
+    {
+        println!("num = {}", num);
+    }
+    println!("End");    
+}
