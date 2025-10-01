@@ -1,0 +1,11 @@
+fn main(){
+    let block = {
+        println!("block starts");
+        let n = 5;
+        println!("n={n}");
+        println!("block ends");
+        6
+    };
+ 
+    println!("block={block}");
+}
