@@ -1,0 +1,21 @@
+fn main(){
+ 
+    let operation1 = chose_operation(1);
+    operation1(5, 4);
+     
+    let operation2 = chose_operation(2);
+    operation2(5, 4);
+     
+    let operation3 = chose_operation(3);
+    operation3(5, 4);
+}
+fn chose_operation(n:i32) -> fn(i32, i32){
+    match n{
+        1 => |a, b|{println!("{}", a + b);},
+        2 => multiply,
+        _ => |a, b|{println!("a={}  b={}", a, b);},
+    }
+}
+fn multiply(a: i32, b: i32){
+    println!("{}", a * b);
+}
