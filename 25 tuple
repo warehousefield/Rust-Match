@@ -1,0 +1,7 @@
+fn main(){
+ 
+    let user: (&str, u8, f32) = ("Tom", 36, 1.78);
+    println!("Имя: {}", user.0);    
+    println!("Возраст: {}", user.1);
+    println!("Рост: {}", user.2);
+}
