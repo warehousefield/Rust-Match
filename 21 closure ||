@@ -1,0 +1,12 @@
+fn main(){
+    let mut n = 5;
+    let mut increase =||{
+        n = n + 1;
+        println!("n = {}", n);
+    };
+    increase();
+    increase();
+    increase();
+     
+    println!("Переменная n в функции main равна {}", n);
+}
