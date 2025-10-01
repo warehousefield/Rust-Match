@@ -1,0 +1,6 @@
+fn main(){
+ 
+    let mut user: (&str, u8, f32) = ("Tom", 36, 1.78);
+    user.0 = "Bob";
+    println!("Имя: {}", user.0);    // Bob
+}
